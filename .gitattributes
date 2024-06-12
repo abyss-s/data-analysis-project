@@ -1,0 +1,4 @@
+# CRLF(Carriage Return Line Feed) 처리
+
+*.csv text eol=lf
+* text=auto
