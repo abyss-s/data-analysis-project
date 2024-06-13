@@ -127,17 +127,3 @@ plt.title("소득수준과 성적 구간 간의 산점도")
 plt.xlabel("소득수준 월평균 사교육비 (만원)")
 plt.ylabel("성적구간 월평균 사교육비 (만원)")
 plt.show()
-
-# 선형 회귀선 포함한 산점도 시각화
-plt.figure(figsize=(6, 6))
-sns.regplot(
-    x="소득수준_월평균 사교육비",
-    y="성적구간_월평균 사교육비",
-    data=df_merged,
-    ci=None,
-    scatter_kws={"s": 50},
-)
-plt.title("소득수준과 성적 구간 간의 선형 회귀선 포함 산점도")
-plt.xlabel("소득수준 월평균 사교육비 (만원)")
-plt.ylabel("성적구간 월평균 사교육비 (만원)")
-plt.show()
